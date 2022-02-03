@@ -378,6 +378,7 @@ struct HomeView: View {
                             
                             
         )
+        .hideNavigationBar()
         
     }
 }

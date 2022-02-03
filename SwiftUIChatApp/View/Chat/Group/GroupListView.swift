@@ -184,6 +184,7 @@ struct GroupListView: View {
         .onAppear(perform: {
             groupListVM.fetchListOfGroup()
         })
+        
         .sheet(isPresented: $groupListVM.openSheet, content: {
             
             GroupChatView(GroupVM: GroupChatViewModel(), isFormGroupChat: false, isFromGroupList: true)
@@ -233,6 +234,7 @@ struct GroupListView: View {
                                     })
                                 }
         )
+        .hideNavigationBar()
     }
 }
 

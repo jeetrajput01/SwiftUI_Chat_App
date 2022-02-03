@@ -154,6 +154,7 @@ struct ChatUserListView: View {
             }))
             
         })
+        .hideNavigationBar()
         .navigationTitle("Chat List")
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarItems(trailing:
@@ -186,6 +187,7 @@ struct ChatUserListView: View {
                                     })
                                 }
         )
+        
     }
 }
 
