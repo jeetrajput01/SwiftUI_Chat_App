@@ -344,40 +344,40 @@ struct HomeView: View {
             }))
             
         })
-        .navigationTitle("User List")
-        .navigationBarTitleDisplayMode(.inline)
-        .navigationBarItems(trailing:
-                                
-                                HStack {
-                                    Button(action: {
-                                        
-                                        homeVM.isGridViewActive = false
-                                        
-                                    }, label: {
-                                        Image(systemName: "square.fill.text.grid.1x2")
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .foregroundColor(Color("menu"))
-                                            .frame(width: 30, height: 35, alignment: .center)
-                                    })
-                                    .padding(.trailing, 20)
-                                    
-                                    Button(action: {
-                                        
-                                        homeVM.isGridViewActive = true
-                                        homeVM.GridSwitch()
-                                        
-                                    }, label: {
-                                        Image(systemName: homeVM.toolbarIcon)
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .foregroundColor(Color("menu"))
-                                            .frame(width: 30, height: 35, alignment: .center)
-                                    })
-                                }
-                            
-                            
-        )
+//        .navigationTitle("User List")
+//        .navigationBarTitleDisplayMode(.inline)
+//        .navigationBarItems(trailing:
+//                                
+//                                HStack {
+//                                    Button(action: {
+//                                        
+//                                        homeVM.isGridViewActive = false
+//                                        
+//                                    }, label: {
+//                                        Image(systemName: "square.fill.text.grid.1x2")
+//                                            .resizable()
+//                                            .aspectRatio(contentMode: .fit)
+//                                            .foregroundColor(Color("menu"))
+//                                            .frame(width: 30, height: 35, alignment: .center)
+//                                    })
+//                                    .padding(.trailing, 20)
+//                                    
+//                                    Button(action: {
+//                                        
+//                                        homeVM.isGridViewActive = true
+//                                        homeVM.GridSwitch()
+//                                        
+//                                    }, label: {
+//                                        Image(systemName: homeVM.toolbarIcon)
+//                                            .resizable()
+//                                            .aspectRatio(contentMode: .fit)
+//                                            .foregroundColor(Color("menu"))
+//                                            .frame(width: 30, height: 35, alignment: .center)
+//                                    })
+//                                }
+//                            
+//                            
+//        )
         .hideNavigationBar()
         
     }

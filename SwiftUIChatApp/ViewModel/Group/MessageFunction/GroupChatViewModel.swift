@@ -24,6 +24,7 @@ class GroupChatViewModel: ObservableObject {
     
     init() {
         UITableView.appearance().showsVerticalScrollIndicator = false
+        
     }
     
     

@@ -25,17 +25,14 @@ struct MainView: View {
     
     //MARK: - Body
     var body: some View {
-//        NavigationView {
-//
-//        }
-//        .hideNavigationBar()
-        
-        ZStack {
+        NavigationView {
+
             TabView(selection: $tabSelection) {
-                NavigationView{
-                    HomeView()
-                        
-                }
+//                NavigationView{
+//
+//
+//                }
+                HomeView()
                 .tabItem {
                     Image(systemName: "house")
                     Text("Home")
@@ -43,9 +40,10 @@ struct MainView: View {
                 .tag(1)
                 .hideNavigationBar()
                    
-                NavigationView{
-                    ChatUserListView(ChatListVM: ChatUserListViewModel())
-                }
+//                NavigationView{
+//
+//                }
+                ChatUserListView(ChatListVM: ChatUserListViewModel())
                 .tabItem {
                     Image(systemName: "square.and.arrow.up")
                     Text("Chat")
@@ -53,9 +51,10 @@ struct MainView: View {
                 .tag(2)
                 .hideNavigationBar()
                 
-                NavigationView {
-                    GroupListView()
-                }
+//                NavigationView {
+//
+//                }
+                GroupListView()
                 .tabItem {
                     Image(systemName: "person.3")
                     Text("group")
@@ -63,9 +62,10 @@ struct MainView: View {
                 .tag(3)
                 .hideNavigationBar()
                 
-                NavigationView{
-                    ProfileView()
-                }
+//                NavigationView{
+//
+//                }
+                ProfileView()
                 .tabItem {
                     Image(systemName: "person.crop.circle")
                     Text("profile")
@@ -74,8 +74,6 @@ struct MainView: View {
                 .hideNavigationBar()
             }
             .accentColor(Color("menu"))
-            
-            
             
             
         }
