@@ -36,10 +36,7 @@ struct MainView: View {
                 }
                 .tag(1)
                 .hideNavigationBar()
-                   
-//                NavigationView{
-//
-//                }
+// Hello this is merge for the cht app.
                 ChatUserListView(ChatListVM: ChatUserListViewModel())
                 .tabItem {
                     Image(systemName: "square.and.arrow.up")
