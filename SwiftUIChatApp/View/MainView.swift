@@ -36,6 +36,7 @@ struct MainView: View {
                 }
                 .tag(1)
                 .hideNavigationBar()
+
 // Hello this is merge for the cht app.
                 ChatUserListView(ChatListVM: ChatUserListViewModel())
                 .tabItem {
