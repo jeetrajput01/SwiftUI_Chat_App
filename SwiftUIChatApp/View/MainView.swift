@@ -28,10 +28,7 @@ struct MainView: View {
         NavigationView {
 
             TabView(selection: $tabSelection) {
-//                NavigationView{
-//
-//
-//                }
+
                 HomeView()
                 .tabItem {
                     Image(systemName: "house")
